@@ -17,10 +17,14 @@
         color: #fff;
     }
     
+@media only screen and (max-width:850px){
+      #content{
+        width:50%;
+      }
+    }
+    
 @media only screen and (max-width:600px){
         #content{
           width:70%;
-          height: 100vh;
         }
       }
-
