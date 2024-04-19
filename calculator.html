@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="calculator.css"/>
+  </head>
+  <body id="bg-img" >
+    <div class="container" id="content">
+      <div id="tophead"><h1>Calculator</h1></div>  
+      <div>
+        <input type="text" class="form-control" id="num1" placeholder="FIRST NUMBER"/>
+      </div>
+      <br />
+      <div class="form-group row justify-content-center">
+        <select class="form-control-sm col-3" id="opt">
+          <option>+</option>
+          <option>-</option>
+          <option>*</option>
+          <option>/</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="text" class="form-control" id="num2" placeholder="SECOND NUMBER"/>
+      </div>
+      <br />
+      <div class=" row justify-content-center">
+        <button type="button" id="button" class="btn btn-secondary btn-lg col-4" onclick="calculate()" value="=">=</button>
+      </div>
+      <div>
+        <h3 id="res">Result:</h3>
+      </div>
+      <div>
+        <input for="text" class="form-control" id="ans" />
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
